@@ -7,11 +7,13 @@
 </head>
 <body>
     <script>
-            name="Xedice",
-            surname="Mirzeyeva",
-            grandes=100
-        }
-        console.log(student)
+        let student = {
+  firstName:"Xedice",
+  lastName: "Mirzeyeva",
+  get fullName() {
+    return this.firstName + " " + this.lastName;
+  }
+};
     </script>
 </body>
 </html>
