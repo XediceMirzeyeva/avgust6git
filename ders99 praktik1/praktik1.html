@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person {
+            constructor(n,s,a,g){
+                this.name = n;
+                this.surname = s;
+                this.age = a;
+                this.gander = g;
+            }
+            eat() {
+                console.log("Person eating");
+            }
+        }
+        class Admin extends Person {
+            constructor(name,surname,age,gender,role,id){
+                super(name,surname,age,gender);
+                this.programingLanguage = role;
+                this.programingLanguage = id;
+            }
+        }
+        class Player {
+            constructor(name,surname,age,gender,level){
+                super(name,surname,age,gender,level)
+                 this.programingLanguage = level;
+            }
+        }
+    </script>
+</body>
+</html>
