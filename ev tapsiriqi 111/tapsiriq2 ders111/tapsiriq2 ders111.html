@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nameInput = document.quarySelector('.name');
+        const tip = document.querySelector('.tip');
+
+        nameInput.addEventListener('keyup',(event) => {
+            if (event.target.value.length < 3){
+                tip.style.display = 'block';
+            } else {
+              tip.style.display = 'none';  
+            }
+        });
+    </script>
+</body>
+</html>

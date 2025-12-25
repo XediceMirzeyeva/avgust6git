@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        constform = document.quarySelector('.user-form');
+
+        userForm.addEventListener('submit',(event) => {
+           event.preventDeafult();
+
+           const data = new FormData(event.target);
+
+           console.log(data.get('firstname'));
+           console.log(data.get('lastname'));
+           console.log(data.get('gander'));
+        });
+    </script>
+</body>
+</html>
